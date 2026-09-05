@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Website</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap-icons.css"> 
+    <style>
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .hero-dark {
+            background-color: #0a3d91;
+        }
+    </style>      
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                
+                <i class="bi bi-bootstrap me-2":: before>
+                </i>
+                Bootstrap5 Website
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<header class="text-center text-white hero-dark" style="padding-top: 6rem; padding-bottom: 6rem;" id="home">
+    <div class="container py-5"> 
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <span class="badge bg-light text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Version 5.3.8</span>
+                <h1 class="display-3 fw-bold mb-3">Build fast, responsive sites with Bootstrap</h1>
+                <p class="lead mb-4 text-white-50">Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="#pricing" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">Get Started</a>
+                    <a href="https://github.com/twbs/bootstrap/releases/download/v5.3.8/bootstrap-5.3.8-dist.zip" class="btn btn-outline-light btn-lg px-4">Download Bootstrap 5.3.8</a>
+                </div>
+            </div>
+        </div>
+    </div>           
+</header>
+
+
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-1">Powerful Features</h2>
+        <p class="text-center text-muted mb-4">Designed to give you full control over your layout and functionality.</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dark Mode Ready</h5>
+                        <p class="card-text">Built-in theme switcher using Bootstrap 5's native data-bs-theme attribute.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">100% Mobile First</h5>
+                        <p class="card-text">Fully fluid layout engineered to scale seamlessly across mobile screens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive UI</h5>
+                        <p class="card-text">Includes dynamic feedback toasts, sliders, and form validation logic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-1">Flexible Pricing</h2>
+        <p class="text-center text-muted mb-4">Choose the plan that fits your business needs.</p>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="card h-100 text-center pricing-card">
+                    <div class="card-header">Starter</div>
+                    <div class="card-body">
+                        <h3 class="card-title">₱0.00 <small class="fs-6 text-muted">/mo</small></h3>
+                        <ul class="list-unstyled">
+                            <li>✓ 1 Project</li>
+                            <li>✓ Community Support</li>
+                            <li>✓ Custom Domain</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Sign Up Free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-primary pricing-card">
+                    <div class="card-header bg-primary text-white">Most Popular</div>
+                    <div class="card-body">
+                        <h5>Pro Developer</h5>
+                        <h3 class="card-title">₱49.00 <small class="fs-6 text-muted">/mo</small></h3>
+                        <ul class="list-unstyled">
+                            <li>✓ Unlimited Projects</li>
+                            <li>✓ Priority Support</li>
+                            <li>✓ Custom Domains</li>
+                        </ul>
+                        <button class="btn btn-primary">Get Started Pro</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center pricing-card">
+                    <div class="card-header">Enterprise</div>
+                    <div class="card-body">
+                        <h3 class="card-title">₱109.00 <small class="fs-6 text-muted">/mo</small></h3>
+                        <ul class="list-unstyled">
+                            <li>✓ Dedicated Server</li>
+                            <li>✓ 24/7 Phone Support</li>
+                            <li>✓ SLA Guarantee</li>
+                        </ul>
+                        <button class="btn btn-outline-primary">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials" class="py-5 bg-secondary bg-light grey">
+    <div class="container">
+        <h2 class="text-center mb-4">What People Say</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <p class="fs-5 fst-italic">"The dark mode toggle integration works like a charm. Extremely clean markup!"</p>
+                    <p class="fw-bold mb-0">Harold Evangelista, BSIT-Business Analytics Track</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="fs-5 fst-italic">"Super easy to customize and the components just work out of the box."</p>
+                    <p class="fw-bold mb-0">Calvin Palacio, BSIT-Network Technology Track</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+            </button>
+        </div>
+    </div>
+</section>
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-1">Get In Touch</h2>
+        <p class="text-center text-muted mb-4">Fill out the form below to send us a message</p>
+        <form id="contactForm" class="col-md-6 mx-auto">
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Form</button>
+        </form>
+    </div>
+</section>
+<footer class="text-center py-4 border-top">
+    <div class="mb-2">
+        <a href="#" class="text-dark mx-2"><i class="bi bi-facebook fs-5"></i></a>
+        <a href="#" class="text-dark mx-2"><i class="bi bi-twitter-x fs-5"></i></a>
+        <a href="#" class="text-dark mx-2"><i class="bi bi-instagram fs-5"></i></a>
+    </div>
+    <p class="text-muted small mb-0">© 2026 Angelic. Built with Bootstrap 5.</p>
+</footer>
+    <script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
